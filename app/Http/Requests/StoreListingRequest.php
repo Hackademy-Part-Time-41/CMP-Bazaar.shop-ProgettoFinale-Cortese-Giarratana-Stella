@@ -22,7 +22,9 @@ class StoreListingRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'title'=>'required|max:255',
+            'description'=>'required|max:3000',
+            'price'=>'required'
         ];
     }
 }

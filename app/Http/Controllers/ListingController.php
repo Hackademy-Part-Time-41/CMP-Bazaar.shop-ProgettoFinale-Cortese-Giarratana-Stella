@@ -31,7 +31,9 @@ class ListingController extends Controller
      */
     public function store(StoreListingRequest $request)
     {
-        
+        Listing::create($request->all());
+
+        return redirect()->route('listings.index')->with('success', 'annuncio inserito!');
     }
 
     /**

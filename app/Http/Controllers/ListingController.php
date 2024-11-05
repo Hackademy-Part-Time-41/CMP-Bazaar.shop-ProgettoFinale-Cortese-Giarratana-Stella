@@ -14,6 +14,8 @@ class ListingController extends Controller
     public function index()
     {
         
+        return view ('listings.index', ['listings'=>Listing::all()]);
+
     }
 
     /**
@@ -21,7 +23,7 @@ class ListingController extends Controller
      */
     public function create()
     {
-        //
+        return view ('listings.create');
     }
 
     /**
@@ -29,7 +31,7 @@ class ListingController extends Controller
      */
     public function store(StoreListingRequest $request)
     {
-        //
+        
     }
 
     /**

@@ -2,10 +2,48 @@
 
 namespace App\Livewire;
 
+use App\Models\Article;
 use Livewire\Component;
+use Livewire\Attributes\Validate;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Routing\Controllers\Middleware;
+use Illuminate\Routing\Controllers\HasMiddleware;
 
-class CreateArticleForm extends Component
+class CreateArticleForm extends Component implements HasMiddleware
 {
+
+    #[Validate('required|min:5')]
+    public $title;
+    #[Validate('required|min:10')]
+    public $description;
+    #[Validate('required|numeric')]
+    public $price;
+    #[Validate('required')]
+    public $category;
+    public $article;
+
+    public function store() {
+        $this->validate();
+        $this->article = Article::create([
+            'title' => $this->title,
+            'description' => $this->description,
+            'price' => $this->price,
+            'category' => $this->category,
+            'user_id' => Auth::id()
+        ]);
+
+        $this->reset();
+
+        session()->flash('success', 'Articolo creato correttamente');
+    }
+
+    public static function middleware(): array
+    {
+        return[
+            new Middleware('auth', only: ['create']),
+        ];
+    }
+
     public function render()
     {
         return view('livewire.create-article-form');

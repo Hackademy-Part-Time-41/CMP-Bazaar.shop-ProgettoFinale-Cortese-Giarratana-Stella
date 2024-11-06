@@ -6,10 +6,8 @@ use App\Models\Article;
 use Livewire\Component;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Routing\Controllers\Middleware;
-use Illuminate\Routing\Controllers\HasMiddleware;
 
-class CreateArticleForm extends Component implements HasMiddleware
+class CreateArticleForm extends Component
 {
 
     #[Validate('required|min:5')]
@@ -37,12 +35,6 @@ class CreateArticleForm extends Component implements HasMiddleware
         session()->flash('success', 'Articolo creato correttamente');
     }
 
-    public static function middleware(): array
-    {
-        return[
-            new Middleware('auth', only: ['create']),
-        ];
-    }
 
     public function render()
     {

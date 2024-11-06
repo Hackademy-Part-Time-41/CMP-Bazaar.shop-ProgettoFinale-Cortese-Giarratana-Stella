@@ -1,9 +1,11 @@
 <?php
 
-use App\Http\Controllers\ListingController;
-use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicController;
+use App\Http\Controllers\ArticleController;
 
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 
-Route::resource('listings', ListingController::class);
+// rotte per gli articoli
+Route::get('/create/article', [ArticleController::class, 'create'])->name('create.article');
+

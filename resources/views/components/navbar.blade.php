@@ -9,17 +9,12 @@
           <li class="nav-item">
             <a class="nav-link" href="{{route('homepage')}}">Home</a>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{{route('create.article')}}">Crea articolo</a></li>
-            </ul>
+          <li>
+            <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
           </li>
-  
 
+          
+          
           @guest
           <li class="nav-item">
             <a class="nav-link" href="/login">Login</a>
@@ -29,22 +24,26 @@
             <a class="nav-link" href="/register">Registrati</a>
           </li>
           @endguest
-        
+          
           @auth
-              
-                 <form action="/logout" method="post">
-
-                      @csrf
-    
-                     <button type="submit">Logout</button>
-    
-                </form>
-
+          <form action="/logout" method="post">
+            @csrf
+            <button type="submit">Logout</button>
+          </form>
           @endauth    
-  
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Altro
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{{route('create.article')}}">Crea articolo</a></li>
+            </ul>
+          </li>
+
         </ul>
-  
+        
       </div>
-  
+      
     </div>
   </nav>

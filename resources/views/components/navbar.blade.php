@@ -41,6 +41,19 @@
             </ul>
           </li>
 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorie </a>
+            <ul class="dropdown-menu">
+              @foreach($categories as $category)
+                  <li><a href="{{route('byCategory', ['category'=>$category])}}" class="dropdown-item text-capitalize">{{$category->name}}</a></li>
+                  @if (!$loop->last)
+                    <hr class="dropdown-divider">
+                  @endif
+              @endforeach
+            </ul>
+            
+
         </ul>
         
       </div>

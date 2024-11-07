@@ -11,12 +11,12 @@ class Article extends Model
     use HasFactory;
     protected $fillable =['title','description','price', 'category_id','user_id'];
 
-    public function categories():BelongsTo
+    public function category():BelongsTo
     {
         return $this->belongsTo(Category::class);
     }
 
-    public function users():BelongsTo
+    public function user():BelongsTo
     {
         return $this->belongsTo(User::class);
     }

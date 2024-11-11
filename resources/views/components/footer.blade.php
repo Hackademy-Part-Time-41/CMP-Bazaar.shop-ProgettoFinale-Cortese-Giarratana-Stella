@@ -2,6 +2,13 @@
 <div class="container my-5">
 
     <footer class="text-center text-white" style="background-color: #f1f1f1;">
+
+      <div class="col-md-5 offset-md-1 mb-3 text-center">
+        <h5 style="color: black">Vuoi diventare revisore?</h5>
+        <p style="color: black">Cliccando il bottone sottostante farai richiesta al nostro admin</p>
+        <a href="{{route('become.revisor')}}" class="btn btn-success">Diventa revisore</a>
+      </div>
+      
     <!-- Grid container -->
     <div class="container pt-4">
       <!-- Section: Social media -->

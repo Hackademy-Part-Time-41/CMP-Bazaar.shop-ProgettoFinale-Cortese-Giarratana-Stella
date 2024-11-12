@@ -5,6 +5,8 @@
 /public/storage
 /storage/*.key
 /storage/pail
+# da scrivere 
+/storage/*.index
 /vendor
 .env
 .env.backup

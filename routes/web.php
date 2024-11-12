@@ -20,3 +20,6 @@ Route::patch('/reject/{article}', [RevisorController::class, 'reject'])->name('r
 Route::get('/revisor/request', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
 Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 
+// rotta chiamata dal form per la ricerca degli articoli
+Route::get('search/article', [PublicController::class, 'searchArticles'])->name('article.search');
+

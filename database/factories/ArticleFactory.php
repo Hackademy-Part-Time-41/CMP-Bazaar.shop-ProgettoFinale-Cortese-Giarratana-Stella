@@ -25,7 +25,8 @@ class ArticleFactory extends Factory
                 'description'=>fake()->paragraph(1),
                 'price'=>fake()->numberBetween(1, 1000),
                 'category_id'=>fake()->numberBetween(1, 10),
-                'user_id'=>fake()->numberBetween(1, $totaluser)
+                'user_id'=>fake()->numberBetween(1, $totaluser),
+                // 'is_accepted'=>fake()->numberBetween(0,1)
         ];
 
     }

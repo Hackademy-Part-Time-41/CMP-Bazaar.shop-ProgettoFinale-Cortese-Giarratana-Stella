@@ -19,8 +19,7 @@
           href="#!"
           role="button"
           data-mdb-ripple-color="dark"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
+          ><i class="fab fa-facebook-f"></i></a>
   
         <!-- Twitter -->
         <a
@@ -28,8 +27,7 @@
           href="#!"
           role="button"
           data-mdb-ripple-color="dark"
-          ><i class="fab fa-twitter"></i
-        ></a>
+          ><i class="fab fa-twitter"></i></a>
   
         <!-- Google -->
         <a
@@ -37,8 +35,7 @@
           href="#!"
           role="button"
           data-mdb-ripple-color="dark"
-          ><i class="fab fa-google"></i
-        ></a>
+          ><i class="fab fa-google"></i></a>
   
         <!-- Instagram -->
         <a
@@ -46,8 +43,7 @@
           href="#!"
           role="button"
           data-mdb-ripple-color="dark"
-          ><i class="fab fa-instagram"></i
-        ></a>
+          ><i class="fab fa-instagram"></i></a>
   
         <!-- Linkedin -->
         <a
@@ -55,16 +51,14 @@
           href="#!"
           role="button"
           data-mdb-ripple-color="dark"
-          ><i class="fab fa-linkedin"></i
-        ></a>
+          ><i class="fab fa-linkedin"></i></a>
         <!-- Github -->
         <a
           class="btn btn-link btn-floating btn-lg text-dark m-1"
           href="#!"
           role="button"
           data-mdb-ripple-color="dark"
-          ><i class="fab fa-github"></i
-        ></a>
+          ><i class="fab fa-github"></i></a>
       </section>
       <!-- Section: Social media -->
     </div>

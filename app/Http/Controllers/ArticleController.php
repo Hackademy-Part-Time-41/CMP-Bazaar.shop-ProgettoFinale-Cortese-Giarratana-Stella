@@ -10,13 +10,11 @@ use Illuminate\Routing\Controllers\HasMiddleware;
 
 class ArticleController extends Controller implements HasMiddleware
 {
-    public function create()
-    {
+    public function create() {
         return view ('article.create');
     }
 
-    public static function middleware(): array
-    {
+    public static function middleware(): array {
         return[
             new Middleware('auth', only: ['create']),
         ];

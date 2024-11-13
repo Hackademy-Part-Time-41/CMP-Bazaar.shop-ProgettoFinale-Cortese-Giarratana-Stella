@@ -18,7 +18,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Account
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu navbar-customclass">
               @guest
                 <li class="nav-item">
                   <a class="nav-link" href="/login">Login</a>
@@ -28,48 +28,76 @@
                   <a class="nav-link" href="/register">Registrati</a>
                 </li>
               @endguest
+
+              @auth
+              {{-- <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu dell'utente
+                </a>
+                <ul class="dropdown-menu navbar-customclass"> --}}
+                  <li><a class="dropdown-item" href="{{route('create.article')}}">Crea articolo</a></li>
+                  <hr class="dropdown-divider">
+                  <li>
+                    @if (Auth::user()->is_revisor)  
+                        <li class="dropdown-item">
+                          <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">Zona revisore
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
+                          </a>
+                        </li>            
+                    @endif
+                  </li>
+                  <hr class="dropdown-divider">
+                  <li>
+                    
+                      <form action="/logout" method="post" class="dropdown-item">
+                      @csrf
+                      <button class="btn btn-outline-danger" type="submit">Logout</button>
+                      </form>
+                    
+                  </li>
+                {{-- </ul> --}}
+              </li>
+              @endauth
+
+
             </ul>
           </li>
           
-          {{-- @guest
-          <li class="nav-item">
-            <a class="nav-link" href="/login">Login</a>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="/register">Registrati</a>
-          </li>
-          @endguest --}}
           
-          @auth
-          <form action="/logout" method="post">
-            @csrf
-            <button type="submit">Logout</button>
-          </form>
-          @if (Auth::user()->is_revisor)
-          
-            <li class="nav-item">
-              <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">Zona revisore
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
-            </a>
-          </li>
-          
-          @endif
-          @endauth    
-          
-          <li class="nav-item dropdown">
+          {{-- @auth
+          <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Altro
+              Menu dell'utente
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu navbar-customclass">
               <li><a class="dropdown-item" href="{{route('create.article')}}">Crea articolo</a></li>
+              <hr class="dropdown-divider">
+              <li>
+                @if (Auth::user()->is_revisor)  
+                    <li class="dropdown-item">
+                      <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">Zona revisore
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
+                      </a>
+                    </li>            
+                @endif
+              </li>
+              <hr class="dropdown-divider">
+              <li>
+                
+                  <form action="/logout" method="post" class="dropdown-item">
+                  @csrf
+                  <button class="btn btn-outline-danger" type="submit">Logout</button>
+                  </form>
+                
+              </li>
             </ul>
           </li>
+          @endauth --}}
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Categorie </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu navbar-customclass">
               @foreach($categories as $category)
                   <li><a href="{{route('byCategory', ['category'=>$category])}}" class="dropdown-item text-capitalize">{{$category->name}}</a></li>
                   @if (!$loop->last)
@@ -77,8 +105,7 @@
                   @endif
               @endforeach
             </ul>
-            
-
+          
         </ul>
         
       </div>

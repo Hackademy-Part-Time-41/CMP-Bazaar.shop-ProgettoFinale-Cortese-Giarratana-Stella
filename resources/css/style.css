@@ -1,3 +1,17 @@
 .height-custom{
     min-height:60vh;
 }
+
+.navbar-customclass {
+    background-color: orange;
+
+}
+
+
+.title-custom{
+    color: brown; 
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+
+    font-style: normal;
+}

@@ -3,4 +3,5 @@
 @tailwind utilities; */
 
 @import 'bootstrap';
+@import 'bootstrap-icons';
 @import './style.css';

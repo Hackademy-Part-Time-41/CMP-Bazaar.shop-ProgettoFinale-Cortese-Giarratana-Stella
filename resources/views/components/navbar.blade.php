@@ -13,9 +13,25 @@
             <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
           </li>
 
+          {{-- modifica --}}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Account
+            </a>
+            <ul class="dropdown-menu">
+              @guest
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">Login</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="/register">Registrati</a>
+                </li>
+              @endguest
+            </ul>
+          </li>
           
-          
-          @guest
+          {{-- @guest
           <li class="nav-item">
             <a class="nav-link" href="/login">Login</a>
           </li>
@@ -23,7 +39,7 @@
           <li class="nav-item">
             <a class="nav-link" href="/register">Registrati</a>
           </li>
-          @endguest
+          @endguest --}}
           
           @auth
           <form action="/logout" method="post">

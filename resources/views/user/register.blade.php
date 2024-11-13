@@ -3,7 +3,7 @@
     <form action="/register" method="post">
 
         @csrf
-    
+        <div class="mx-5 ">
             <label for="username">Scegli uno username</label>
             <input type="text" id="name" name="name" class="form-control">
             @error('name')
@@ -25,9 +25,9 @@
             <label for="password_confirmation">Conferma password</label>
             <input type="password" id="password_confirmation" name="password_confirmation" class="form-control">
         
-            <button type="submit" class="btn btn-primary">Registrati!</button>
+            <button type="submit" class="my-3 btn btn-success">Registrati!</button>
     
-        
+        </div>
     </form>
 
 </x-layout>

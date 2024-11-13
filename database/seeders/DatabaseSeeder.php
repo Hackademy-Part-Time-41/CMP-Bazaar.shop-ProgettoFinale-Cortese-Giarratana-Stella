@@ -27,14 +27,14 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
 
-        // foreach ($this->categories as $category) {
-        //     Category::create([
-        //         'name'=> $category
-        //     ]);
-        // }
+        foreach ($this->categories as $category) {
+            Category::create([
+                'name'=> $category
+            ]);
+        }
 
-        Article::factory(20)->create();
         User::factory(10)->create();
+        Article::factory(20)->create();
 
         // User::factory()->create([
         //     'name' => 'Test User',

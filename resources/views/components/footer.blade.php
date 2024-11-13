@@ -1,5 +1,5 @@
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container my-5">
+{{-- <div class="container my-5"> --}}
 
     <footer class="text-center text-white" style="background-color: #f1f1f1;">
 
@@ -9,68 +9,42 @@
         <a href="{{route('become.revisor')}}" class="btn btn-success">Diventa revisore</a>
       </div>
       
-    <!-- Grid container -->
-    <div class="container pt-4">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-facebook-f"></i></a>
-  
-        <!-- Twitter -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-twitter"></i></a>
-  
-        <!-- Google -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-google"></i></a>
-  
-        <!-- Instagram -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-instagram"></i></a>
-  
-        <!-- Linkedin -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-linkedin"></i></a>
-        <!-- Github -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-github"></i></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
+      <footer class="text-center navbar-customclass">
+        <!-- Grid container -->
+        <div class="container d-flex justify-content-between pt-4">
     
-  </div>
-  <!-- End of .container -->
+          {{-- Section: Dati aziendali --}}
+          <section class=" fs-6 fst-italic mb-4">
+            <p>Bazaar.shop srl</p>
+            <p>Via Qualcosa 0</p>
+            <p>Città - CAP</p>
+            <p>admin@bazaar.shop</p>
+          </section>
+    
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button" data-mdb-ripple-color="dark">                                    
+              <i class="bi bi-facebook"></i>
+            </a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+              <i class="bi bi-instagram"></i>
+            </a>
+            {{--  Pinterest --}}
+            <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+              <i class="bi bi-pinterest"></i>
+            </a>
+            
+          </section>
+          
+          {{-- Sezione dev --}}
+          <section>
+    
+            <p>Made with Laravel</p>
+            <p>by cmp.dev</p>
+            <p>[LOGO]</p>
+            
+          </section>
+        </div>

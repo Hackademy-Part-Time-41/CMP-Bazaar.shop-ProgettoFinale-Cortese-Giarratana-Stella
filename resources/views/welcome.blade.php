@@ -11,7 +11,7 @@
     <div class="'container-fluid text-center">
         <div class="row vh-100 justify-content-center align-items-center">
             <div class="col-12">
-                <h1 class="display-1">BazaarShop</h1>
+                <h1 class="title-custom display-1">BazaarShop</h1>
                 <div class="my-3">
                     @auth
                         <a href="{{ route('create.article') }}"><button>Crea articolo</button></a>

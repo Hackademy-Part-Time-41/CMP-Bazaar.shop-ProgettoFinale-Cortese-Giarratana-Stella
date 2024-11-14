@@ -12,6 +12,7 @@ Route::get('/create/article', [ArticleController::class, 'create'])->name('creat
 Route::get('/article/index', [ArticleController::class, 'index'])->name('article.index');
 Route::get('/show/article/{article}', [ArticleController::class, 'show'])->name('article.show');
 Route::get('/category/{category}', [ArticleController::class, 'byCategory'])->name('byCategory');
+Route::get('/article/draft/{article}', [ArticleController::class, 'draft'])->middleware('auth')->name('article.draft');
 
 // rotte per la revisione articoli
 Route::get('revisor/index', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');

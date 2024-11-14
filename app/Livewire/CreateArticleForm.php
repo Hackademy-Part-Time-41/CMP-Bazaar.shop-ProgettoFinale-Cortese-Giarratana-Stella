@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 class CreateArticleForm extends Component
 {
 
-    #[Validate('required|min:5')]
+    #[Validate('required|min:5|max:30')]
     public $title;
     #[Validate('required|min:10')]
     public $description;
@@ -30,9 +30,11 @@ class CreateArticleForm extends Component
             'user_id' => Auth::id()
         ]);
 
-        $this->reset();
+        // $this->reset();
 
-        session()->flash('success', 'Articolo creato correttamente');
+        // session()->flash('success', 'Articolo creato correttamente');
+
+        return redirect()->route('article.draft', $this->article)->with('success', 'Articolo in attesa di revisione');
     }
 
 

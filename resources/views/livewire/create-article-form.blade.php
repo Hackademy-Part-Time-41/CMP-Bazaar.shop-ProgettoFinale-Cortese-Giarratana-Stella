@@ -1,8 +1,8 @@
-@if (session()->has('success'))
+{{-- @if (session()->has('success'))
     <div class="alert alert-success text-center">
         {{ session('success') }}
     </div>
-@endif
+@endif --}}
 
 <form class="bg-body-tertiary shadow rounded p-5 my-5" wire:submit="store">
     <div class="mb-3">

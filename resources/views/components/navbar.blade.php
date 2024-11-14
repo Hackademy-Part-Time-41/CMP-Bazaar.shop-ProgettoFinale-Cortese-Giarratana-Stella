@@ -36,9 +36,9 @@
                 </a>
                 <ul class="dropdown-menu navbar-customclass"> --}}
                   <li><a class="dropdown-item" href="{{route('create.article')}}">Crea articolo</a></li>
-                  <hr class="dropdown-divider">
                   <li>
                     @if (Auth::user()->is_revisor)  
+                    <hr class="dropdown-divider">
                         <li class="dropdown-item">
                           <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">Zona revisore
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
@@ -55,44 +55,12 @@
                       </form>
                     
                   </li>
-                {{-- </ul> --}}
               </li>
               @endauth
 
 
             </ul>
           </li>
-          
-          
-          {{-- @auth
-          <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Menu dell'utente
-            </a>
-            <ul class="dropdown-menu navbar-customclass">
-              <li><a class="dropdown-item" href="{{route('create.article')}}">Crea articolo</a></li>
-              <hr class="dropdown-divider">
-              <li>
-                @if (Auth::user()->is_revisor)  
-                    <li class="dropdown-item">
-                      <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">Zona revisore
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
-                      </a>
-                    </li>            
-                @endif
-              </li>
-              <hr class="dropdown-divider">
-              <li>
-                
-                  <form action="/logout" method="post" class="dropdown-item">
-                  @csrf
-                  <button class="btn btn-outline-danger" type="submit">Logout</button>
-                  </form>
-                
-              </li>
-            </ul>
-          </li>
-          @endauth --}}
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

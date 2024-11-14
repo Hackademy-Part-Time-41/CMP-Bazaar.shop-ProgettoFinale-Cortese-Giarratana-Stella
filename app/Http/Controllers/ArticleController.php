@@ -34,4 +34,8 @@ class ArticleController extends Controller implements HasMiddleware
         return view('article.byCategory', compact('articles','category'));
     }
 
+    public function draft (Article $article) {
+        return view ('article.draft', compact('article'));
+    }
+
 }

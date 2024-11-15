@@ -1,4 +1,4 @@
-<x-layout :title="$category->name">
+<x-layout>
 
     <div class="container">
         <div class="row py-5 justify-content-center align-items-center text-center">

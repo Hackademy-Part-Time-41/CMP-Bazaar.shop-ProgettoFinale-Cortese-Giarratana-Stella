@@ -1,4 +1,4 @@
-<x-layout title="Crea annuncio">
+<x-layout>
     <div class="container pt-5">
         <div class="row justify-content-center">
             <div class="col-12 text-center">

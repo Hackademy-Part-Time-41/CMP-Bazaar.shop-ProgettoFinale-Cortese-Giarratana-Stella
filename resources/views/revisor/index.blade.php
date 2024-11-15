@@ -1,4 +1,4 @@
-<x-layout title="Revisione articoli">
+<x-layout>
     <div class="container-fluid pt-5">
         <div class="row">
             <div class="col-3">

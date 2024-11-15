@@ -1,4 +1,4 @@
-<x-layout title="Login">
+<x-layout>
     
     <form action="/login" method="POST">
 

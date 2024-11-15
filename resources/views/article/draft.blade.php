@@ -1,4 +1,4 @@
-<x-layout :title="$article->title">
+<x-layout>
 
     @if (session()->has('success'))
         <div class="alert alert-success text-center">

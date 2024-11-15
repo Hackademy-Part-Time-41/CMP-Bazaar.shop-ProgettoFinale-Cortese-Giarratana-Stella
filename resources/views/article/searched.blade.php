@@ -1,4 +1,4 @@
-<x-layout title="risultati ricerca">
+<x-layout>
 
     <div class="container-fluid">
         <div class="row py-5 justify-content-center align-items-center text-center">

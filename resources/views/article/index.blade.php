@@ -1,4 +1,4 @@
-<x-layout title="Indice Articoli">
+<x-layout>
     <div class="container-fluid">
         <div class="row height-custom justify-content-center align-items-center text-center">
             <div class="col-12">

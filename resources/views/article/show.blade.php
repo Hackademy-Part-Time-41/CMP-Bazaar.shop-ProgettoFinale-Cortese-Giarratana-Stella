@@ -1,4 +1,4 @@
-<x-layout :title="$article->title">
+<x-layout>
 
     <div class="container">
         

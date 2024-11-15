@@ -1,4 +1,4 @@
-<x-layout title="Registrati">
+<x-layout>
 
     <form action="/register" method="post">
 

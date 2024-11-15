@@ -1,4 +1,4 @@
-<x-layout title="Home">
+<x-layout>
     
     @if(session()->has('errorMessage'))
         <div class="alert alert-danger text-center shadow rounded w-50">{{session('errorMessage')}}</div>

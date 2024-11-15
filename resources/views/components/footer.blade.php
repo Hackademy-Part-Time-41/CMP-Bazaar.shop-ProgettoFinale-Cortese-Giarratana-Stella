@@ -3,10 +3,12 @@
 
     <footer class="text-center text-white" style="background-color: #f1f1f1;">
 
-      <div class="col-md-5 offset-md-1 mb-3 text-center">
-        <h5 style="color: black">Vuoi diventare revisore?</h5>
-        <p style="color: black">Cliccando il bottone sottostante farai richiesta al nostro admin</p>
-        <a href="{{route('become.revisor')}}" class="btn btn-success">Diventa revisore</a>
+      <div class="row justify-content-center">
+        <div class="col-md-5 offset-md-1 mb-3 text-center">
+          <h5 style="color: black">Vuoi diventare revisore?</h5>
+          <p style="color: black">Cliccando il bottone sottostante farai richiesta al nostro admin</p>
+          <a href="{{route('become.revisor')}}" class="btn btn-success">Diventa revisore</a>
+        </div>
       </div>
       
       <footer class="text-center navbar-customclass">

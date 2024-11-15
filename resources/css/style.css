@@ -2,11 +2,6 @@
     max-width: 100%;
 }
 
-
-body {
-    overflow-x: hidden;
-}
-
 .height-custom {
     min-height:60vh;
 }

@@ -31,7 +31,7 @@ class RevisorController extends Controller
     // funzioni per la richiesta/accettazione mail
     public function becomeRevisor() {
         Mail::to('admin@bazaar.shop')->send(new BecomeRevisor(Auth::user()));
-        return redirect()->route('homepage')->with('message', 'Complimenti hai chiesto di diventare revisor');
+        return redirect()->route('homepage')->with('message', 'Complimenti! Hai chiesto di diventare revisor. Attendi la nostra risposta');
     }
 
     public function makeRevisor(User $user){

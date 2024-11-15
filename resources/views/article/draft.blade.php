@@ -1,7 +1,7 @@
 <x-layout>
 
     @if (session()->has('success'))
-        <div class="alert alert-success text-center">
+        <div class="alert alert-success text-center d-flex justify-content-center mx-5 my-3 ">
             {{ session('success') }}
         </div>
     @endif

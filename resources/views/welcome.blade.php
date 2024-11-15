@@ -4,8 +4,9 @@
         <div class="alert alert-danger text-center shadow rounded w-50">{{session('errorMessage')}}</div>
     @endif
 
+    {{--messaggio di richiesta revisore --}}
     @if(session()->has('message'))
-        <div class="alert alert-success text-center shadow rounded w-50">{{session('message')}}</div>
+        <div class=" d-flex justify-content-center mx-5 my-3 alert alert-success text-center shadow rounded ">{{session('message')}}</div>
     @endif
 
     <div class="'container-fluid text-center">

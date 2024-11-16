@@ -1,4 +1,4 @@
-* {
+*{
     max-width: 100%;
 }
 
@@ -8,11 +8,7 @@
 
 .navbar-customclass {
     background-color: orange;
-    color: brown; 
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
-    flex-wrap: nowrap;
+
 }
 
 .title-custom{

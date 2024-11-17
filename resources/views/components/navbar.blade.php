@@ -23,7 +23,7 @@
               Categorie </a>
             <ul class="dropdown-menu navbar-customclass">
               @foreach($categories as $category)
-                  <li><a href="{{route('byCategory', ['category'=>$category])}}" class="dropdown-item text-capitalize">{{$category->name}}</a></li>
+                  <li class="nav-item"><a href="{{route('byCategory', ['category'=>$category])}}" class="nav-link btn btn-outline-danger text-capitalize">{{$category->name}}</a></li>
                   @if (!$loop->last)
                     <hr class="dropdown-divider">
                   @endif

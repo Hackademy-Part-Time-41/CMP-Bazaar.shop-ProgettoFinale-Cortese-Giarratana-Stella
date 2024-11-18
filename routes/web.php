@@ -26,3 +26,5 @@ Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->n
 // rotta chiamata dal form per la ricerca degli articoli
 Route::get('search/article', [PublicController::class, 'searchArticles'])->name('article.search');
 
+// rotta per cambio lingua
+Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');

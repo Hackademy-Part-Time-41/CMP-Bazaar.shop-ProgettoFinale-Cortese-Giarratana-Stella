@@ -8,7 +8,7 @@
       <form action="{{route('article.search')}}" class="d-flex ms-auto" role="search" method="GET">
         <div class="input-group">
           <input type="search" name="query" class="form-control" placeholder="Scrivi..." aria-label="search">
-          <button type="submit" class="input-group-text btn btn-danger" id="basic-addon2"> Cerca </button>
+          <button type="submit" class="input-group-text btn btn-danger" id="basic-addon2"> {{__('ui.search')}} </button>
         </div>
       </form>
       
@@ -82,8 +82,19 @@
               
             </ul>
           </li>
-          
+        <li>
+          <x-_locale lang="it" />
+        </li>
+        <li>
+          <x-_locale lang="en" />
+        </li>
+        <li>
+          <x-_locale lang="es" />
+        </li>
+        <li>
           <button class="btn btn-outline-danger"><i class="navbar-item bi bi-bag-check-fill"></i> Carrello</button>
+        </li>
+
         </ul>
         
       </div>

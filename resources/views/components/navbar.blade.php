@@ -7,7 +7,7 @@
       {{-- BARRA DI RICERCA --}}
       <form action="{{route('article.search')}}" class="d-flex ms-auto" role="search" method="GET">
         <div class="input-group">
-          <input type="search" name="query" class="form-control" placeholder="Scrivi..." aria-label="search">
+          <input type="search" name="query" class="form-control" placeholder="{{__('ui.write')}}" aria-label="search">
           <button type="submit" class="input-group-text btn btn-danger" id="basic-addon2"> {{__('ui.search')}} </button>
         </div>
       </form>
@@ -20,10 +20,10 @@
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Categorie </a>
+              {{__('ui.categories')}}</a>
             <ul class="dropdown-menu navbar-customclass">
               @foreach($categories as $category)
-                  <li class="nav-item"><a href="{{route('byCategory', ['category'=>$category])}}" class="nav-link btn btn-outline-danger text-capitalize">{{$category->name}}</a></li>
+                  <li class="nav-item"><a href="{{route('byCategory', ['category'=>$category])}}" class="nav-link btn btn-outline-danger text-capitalize"> {{__("ui.$category->name")}} </a></li>
                   @if (!$loop->last)
                     <hr class="dropdown-divider">
                   @endif
@@ -35,7 +35,7 @@
             <a class="nav-link" href="{{route('homepage')}}">Home</a>
           </li> --}}
           <li>
-            <a class="nav-link" href="{{route('article.index')}}">Esplora</a>
+            <a class="nav-link" href="{{route('article.index')}}">{{__('ui.browse')}}</a>
           </li>
 
           {{-- modifica --}}
@@ -50,7 +50,7 @@
                 </li>
   
                 <li class="nav-item">
-                  <a class="nav-link btn btn-outline-danger" href="/register">Registrati</a>
+                  <a class="nav-link btn btn-outline-danger" href="/register">{{__('ui.signup')}}</a>
                 </li>
               @endguest
 
@@ -92,7 +92,7 @@
           <x-_locale lang="es" />
         </li>
         <li>
-          <button class="btn btn-outline-danger"><i class="navbar-item bi bi-bag-check-fill"></i> Carrello</button>
+          <button class="btn btn-outline-danger"><i class="navbar-item bi bi-bag-check-fill"></i>{{__('ui.cart')}} </button>
         </li>
 
         </ul>

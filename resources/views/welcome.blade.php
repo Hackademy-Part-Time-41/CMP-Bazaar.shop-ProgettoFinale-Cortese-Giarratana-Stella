@@ -15,7 +15,7 @@
                 <h1 class="title-custom display-1">BazaarShop</h1>
                 <div class="my-3">
                     @auth
-                        <a href="{{ route('create.article') }}"><button>Crea articolo</button></a>
+                        <a href="{{ route('create.article') }}"><button>{{__('ui.createArticle')}}</button></a>
                     @endauth
                 </div>
             </div>
@@ -30,7 +30,7 @@
             </div>
         @empty
             <div class="col-12">
-                <h3 class="text-center">Non sono ancora stati creati articoli</h3>
+                <h3 class="text-center">{{__('ui.noArticlesYet')}}</h3>
             </div>
         @endforelse
     </div>

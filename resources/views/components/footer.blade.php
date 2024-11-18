@@ -5,9 +5,9 @@
 
       <div class="row justify-content-center m-0">
         <div class="col-md-5 mb-3 text-center py-3">
-          <h5 style="color: black">Vuoi diventare revisore?</h5>
-          <p style="color: black">Cliccando il bottone sottostante farai richiesta al nostro admin</p>
-          <a href="{{route('become.revisor')}}" class="btn btn-success">Diventa revisore</a>
+          <h5 style="color: black">{{__('ui.revisorRequest1')}}</h5>
+          <p style="color: black">{{__('ui.revisorRequest2')}}</p>
+          <a href="{{route('become.revisor')}}" class="btn btn-success">{{__('ui.revisorRequestBtn')}}</a>
         </div>
       </div>
       

@@ -4,11 +4,13 @@ namespace App\Livewire;
 
 use App\Models\Article;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Auth;
 
 class CreateArticleForm extends Component
 {
+    use WithFileUploads;
 
     #[Validate('required|min:5|max:30')]
     public $title;
@@ -19,6 +21,9 @@ class CreateArticleForm extends Component
     #[Validate('required')]
     public $category;
     public $article;
+    
+    public $images=[];
+    public $temporary_images;
 
     public function store() {
         $this->validate();
@@ -38,8 +43,7 @@ class CreateArticleForm extends Component
     }
 
 
-    public function render()
-    {
+    public function render(){
         return view('livewire.create-article-form');
     }
 }

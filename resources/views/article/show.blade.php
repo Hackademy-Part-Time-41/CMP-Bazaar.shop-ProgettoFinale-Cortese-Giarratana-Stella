@@ -11,12 +11,11 @@
         <div class="row height-custom justify-content-center py-5">
             <div class="col-12 col-md-6 mb-3">
                 @if ($article->images->count() > 0)
-                    {{-- @dd($article->images) --}}
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
                             @foreach ($article->images as $key => $image)
                                 <div class="carousel-item @if ($loop->first) active @endif">
-                                    <img src="{{ Storage::url($image->path) }}"
+                                    <img src="{{ $image->getUrl(300, 300) }}"
                                         alt="immagine {{ $key + 1 }} dell'articolo {{ $article->title }}"
                                         class="d-block w-100 rounded shadow">
                                 </div>

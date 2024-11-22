@@ -33,3 +33,42 @@
     width: 120px;
     
 }
+
+.sfondo{
+    height: 500px;
+    /* background-color: red; */
+    background-image: url('/resources/css/img/wallpaper.png');
+     background-repeat: no-repeat ;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     background-size: 100%;
+ }
+
+ .btncustom{
+    background-color:rgb(129, 164, 210);
+    /* background-color: #4786A8; */
+    color: white
+}
+
+.box_form{
+    background-color: orange;
+    border-radius: 5%;
+    height: 400px;
+    width: 500px;
+    margin-top: 60px;
+    /* padding-top: 10%; */
+    padding: 10%;
+
+}
+
+.container_box{
+    /* background-color:yellow; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    
+    height: 800px; ;
+
+}

@@ -82,40 +82,10 @@
               
             </ul>
           </li>
-          @if (app()->getLocale() == 'it')
-          <li>
-            <x-_locale lang="it" />
-          </li>
-          <li>
-            <x-_locale lang="en" />
-          </li>
-          <li>
-            <x-_locale lang="es" />
-          </li>
-  
-          @elseif (app()->getLocale() == 'en')
-          <li>
-            <x-_locale lang="en" />
-          </li>
-          <li>
-            <x-_locale lang="it" />
-          </li>
-          <li>
-            <x-_locale lang="es" />
-          </li>
-  
-          @elseif (app()->getLocale() == 'es')
-          <li>
-            <x-_locale lang="es" />
-          </li>
-          <li>
-            <x-_locale lang="en" />
-          </li>
-          <li>
-            <x-_locale lang="it" />
-          </li>
-  
-          @endif
+
+
+        <x-lang></x-lang>
+            
         <li>
           <button class="btn btn-outline-danger"><i class="navbar-item bi bi-bag-check-fill"></i>{{__('ui.cart')}} </button>
         </li>

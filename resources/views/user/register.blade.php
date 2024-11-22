@@ -1,9 +1,10 @@
 <x-layout>
-
+<div class="container_box">
     <form action="/register" method="post">
 
         @csrf
-        <div class="mx-5 ">
+        <div class="box_form ">
+
             <label for="username">Scegli uno username</label>
             <input type="text" id="name" name="name" class="form-control" value="{{old('name')}}">
             @error('name')
@@ -29,5 +30,5 @@
     
         </div>
     </form>
-
+</div>
 </x-layout>

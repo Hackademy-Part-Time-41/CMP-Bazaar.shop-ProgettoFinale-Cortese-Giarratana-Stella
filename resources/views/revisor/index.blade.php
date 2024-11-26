@@ -3,7 +3,7 @@
         <div class="row">
             <div>
                 <div class="rounded shadow bg-body-secondary">
-                    <h1 class="display-5 text-center pb-2 ">
+                    <h1 class="display-5 text-center pb-2 my-4">
                         Revisor dashboard
                     </h1>
                 </div>

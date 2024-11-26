@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-customclass shadow p-4 rounded">
+<nav class="navbar navbar-expand-lg navbar-customclass shadow p-2 rounded position-fixed w-100 z-3">
     <div class="container-fluid">
       
       {{-- LOGO --}}
@@ -18,7 +18,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown d-flex align-items-center">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{__('ui.categories')}}</a>
             <ul class="dropdown-menu navbar-customclass">
@@ -34,12 +34,12 @@
           {{-- <li class="nav-item">
             <a class="nav-link" href="{{route('homepage')}}">Home</a>
           </li> --}}
-          <li>
+          <li class="d-flex align-items-center">
             <a class="nav-link" href="{{route('article.index')}}">{{__('ui.browse')}}</a>
           </li>
 
           {{-- modifica --}}
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown d-flex align-items-center">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Account
             </a>
@@ -86,7 +86,7 @@
 
         <x-lang></x-lang>
             
-        <li>
+        <li class="d-flex align-items-center">
           <button class="btn btn-outline-danger"><i class="navbar-item bi bi-bag-check-fill"></i>{{__('ui.cart')}} </button>
         </li>
 

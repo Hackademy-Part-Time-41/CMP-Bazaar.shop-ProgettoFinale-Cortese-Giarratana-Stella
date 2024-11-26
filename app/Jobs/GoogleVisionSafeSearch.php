@@ -31,7 +31,7 @@ class GoogleVisionSafeSearch implements ShouldQueue
             return;
         }
 
-        $image = file_get_contents(storage_path('App/Public/' . $i->path));
+        $image = file_get_contents(storage_path('app/public/' . $i->path));
     
     putenv('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));
     

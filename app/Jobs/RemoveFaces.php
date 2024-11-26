@@ -32,7 +32,7 @@ class RemoveFaces implements ShouldQueue
             return;
         };
         
-        $srcPath = storage_path('app/public/ . $i->path');
+        $srcPath = storage_path('app/public/' . $i->path);
         $image = file_get_contents($srcPath);
 
         putenv ('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));
@@ -42,7 +42,7 @@ class RemoveFaces implements ShouldQueue
         $faces = $response->getFaceAnnotations();
 
         foreach($faces as $face){
-            $vertices = $face->getBoundingPoly()->getVertices;
+            $vertices = $face->getBoundingPoly()->getVertices();
 
             $bounds = [];
 
@@ -56,7 +56,7 @@ class RemoveFaces implements ShouldQueue
             $image = SpatieImage::load($srcPath);
 
             $image->watermark(
-                base_path('resources/imag/smile.png'),
+                base_path('resources/img/smile.png'),
                 AlignPosition::TopLeft,
                 paddingX: $bounds[0][0],
                 paddingY: $bounds[0][1],

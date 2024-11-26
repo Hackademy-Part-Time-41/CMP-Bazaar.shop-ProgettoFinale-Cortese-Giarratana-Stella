@@ -56,12 +56,12 @@
 
               @auth
                   <li>
-                    <a class="dropdown-item btn btn-outline-danger" href="{{route('create.article')}}">Crea articolo</a></li>
+                    <a class="nav-link btn btn-outline-danger" href="{{route('create.article')}}">Crea articolo</a></li>
                   <li>
                     @if (Auth::user()->is_revisor)  
                     <hr class="dropdown-divider">
                         <li>
-                          <a href=" {{ route('revisor.index')}}" class="dropdown-item btn btn-outline-danger position-relative w-sm-25">Zona revisore
+                          <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-danger position-relative w-sm-25">Zona revisore
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
                           </a>
                         </li>            
@@ -70,9 +70,9 @@
                   <hr class="dropdown-divider">
                   <li>
                     
-                      <form action="/logout" method="post">
+                      <form class="d-flex justify-content-center" action="/logout" method="post">
                       @csrf
-                      <button class="dropdown-item btn btn-outline-danger"type="submit">Logout</button>
+                      <button class="nav-link btn btn-outline-danger w-100" type="submit">Logout</button>
                       </form>
                     
                   </li>

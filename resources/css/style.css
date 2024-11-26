@@ -47,18 +47,14 @@
  }
 
  .btncustom{
-    background-color:rgb(129, 164, 210);
+    background-color:rgb(107, 104, 182);
     /* background-color: #4786A8; */
     color: white
 }
 
 .box_form{
-    background-color: orange;
-    border-radius: 5%;
-    height: 400px;
-    width: 500px;
-    margin-top: 60px;
-    /* padding-top: 10%; */
+    height: 70%;
+    width: 40%;
     padding: 10%;
 
 }

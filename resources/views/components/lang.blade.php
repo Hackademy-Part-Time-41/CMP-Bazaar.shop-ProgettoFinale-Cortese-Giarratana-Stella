@@ -5,7 +5,7 @@
                 aria-expanded="false">
                 <x-_locale lang="it" />
             </a>
-            <ul class="dropdown-menu navbar-customclass">
+            <ul class="dropdown-menu navbar-customclass position-absolute">
                 <li class="dropdown-item"><x-_locale lang="en" /></li>
                 <li class="dropdown-item"><x-_locale lang="es" /></li>
             </ul>
@@ -16,7 +16,7 @@
                 aria-expanded="false">
                 <x-_locale lang="en" />
             </a>
-            <ul class="dropdown-menu navbar-customclass">
+            <ul class="dropdown-menu navbar-customclass position-absolute">
                 <li><x-_locale lang="it" /></li>
                 <li><x-_locale lang="es" /></li>
             </ul>
@@ -27,7 +27,7 @@
                 aria-expanded="false">
                 <x-_locale lang="es" />
             </a>
-            <ul class="dropdown-menu navbar-customclass">
+            <ul class="dropdown-menu navbar-customclass position-absolute">
                 <li><x-_locale lang="it" /></li>
                 <li><x-_locale lang="en" /></li>
             </ul>

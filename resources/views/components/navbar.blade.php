@@ -33,7 +33,7 @@
           <li class="nav-item dropdown d-flex align-items-center">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{__('ui.categories')}}</a>
-            <ul class="dropdown-menu navbar-customclass">
+            <ul class="dropdown-menu navbar-customclass position-absolute">
               @foreach($categories as $category)
                   <li class="nav-item"><a href="{{route('byCategory', ['category'=>$category])}}" class="nav-link btn btn-outline-danger text-capitalize"> {{__("ui.$category->name")}} </a></li>
                   @if (!$loop->last)
@@ -51,7 +51,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Account
             </a>
-            <ul class="dropdown-menu navbar-customclass">
+            <ul class="dropdown-menu navbar-customclass position-absolute">
               @guest
                 <li class="nav-item">
                   <a class="nav-link btn btn-outline-danger" href="/login">Login</a>

@@ -8,6 +8,7 @@
     @if(session()->has('message'))
         <div class=" d-flex justify-content-center mx-5 my-3 alert alert-success text-center shadow rounded ">{{session('message')}}</div>
     @endif
+    <div style="height: 15vh"></div>
 
     <div class="'container-fluid text-center sfondo">
         <div class="row vh-100 justify-content-center align-items-center">

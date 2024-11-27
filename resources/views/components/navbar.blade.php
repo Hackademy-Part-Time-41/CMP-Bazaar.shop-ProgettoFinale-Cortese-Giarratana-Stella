@@ -18,6 +18,18 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
+
+
+          {{-- crea articolo --}}
+          @auth
+          <li class="d-flex align-items-center">
+            <a class="nav-link btn btn-outline-danger" href="{{route('create.article')}}">Inserisci articolo</a></li>
+          <li>
+          @endauth
+
+
+
+          {{-- categorie --}}
           <li class="nav-item dropdown d-flex align-items-center">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{__('ui.categories')}}</a>
@@ -30,15 +42,11 @@
               @endforeach
             </ul>
           </li>
-          {{-- ho commentato il tasto home perché di solito la home si raggiunge cliccando sul logo --}}
-          {{-- <li class="nav-item">
-            <a class="nav-link" href="{{route('homepage')}}">Home</a>
-          </li> --}}
           <li class="d-flex align-items-center">
             <a class="nav-link" href="{{route('article.index')}}">{{__('ui.browse')}}</a>
           </li>
 
-          {{-- modifica --}}
+          
           <li class="nav-item dropdown d-flex align-items-center">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Account
@@ -55,9 +63,6 @@
               @endguest
 
               @auth
-                  <li>
-                    <a class="nav-link btn btn-outline-danger" href="{{route('create.article')}}">Crea articolo</a></li>
-                  <li>
                     @if (Auth::user()->is_revisor)  
                     <hr class="dropdown-divider">
                         <li>

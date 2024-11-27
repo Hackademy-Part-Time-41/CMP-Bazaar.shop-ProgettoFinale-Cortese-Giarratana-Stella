@@ -67,7 +67,7 @@
                     @if (Auth::user()->is_revisor)
                         <li>
                           <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-danger position-relative w-sm-25">Zona revisore
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
+                            <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
                           </a>
                         </li>            
                     @endif

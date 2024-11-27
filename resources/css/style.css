@@ -53,12 +53,19 @@
 .container_box{
     display: flex;
     justify-content: center;
-    height: 800px; ;
+    height: max-content; ;
 }
 
 .dropdown-item:hover {
     background-color: #dc3545;
     border-radius: 8%;
+}
+
+.position-absolute {
+    max-height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 

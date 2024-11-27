@@ -1,5 +1,5 @@
 <x-layout>
-<div class="container_box py-5">
+<div class="container_box">
     <form action="/register" method="post" class="bg-warning shadow rounded p-4 my-5 box_form bg-opacity-50 border border-danger-subtle">
 
         @csrf
@@ -7,15 +7,15 @@
             <label for="username">Scegli uno username</label>
             <input type="text" id="name" name="name" class="form-control" value="{{old('name')}}">
             @error('name')
-                <div class="alert alert-danger">{{$message}}</div>
+                <b style="color: red">{{$message}}</b>
             @enderror
-        </div>
+        </>
 
         <div class="py-2">
             <label for="email">Fornisci la tua email</label>
             <input type="email" id="email" name="email" class="form-control" value="{{old('email')}}">
             @error('email')
-                <div class="alert alert-danger">{{$message}}</div>
+                <b style="color: red">{{$message}}</b>
             @enderror
         </div>
         
@@ -24,7 +24,7 @@
             <label for="password">Scegli una password</label>
             <input type="password" id="password" name="password" class="form-control" value="{{old('password')}}">
             @error('password')
-                <div class="alert alert-danger">{{$message}}</div>
+                <b style="color: red">{{$message}}</b>
             @enderror
         </div>
 

@@ -10,7 +10,7 @@
     @endif
     <div style="height: 15vh"></div>
 
-    <div class="'container-fluid text-center sfondo">
+    <div class="container-fluid text-center sfondo">
         <div class="row vh-100 justify-content-center align-items-center">
             <div class="col-12">
                 {{-- <h1 class="title-custom display-1">BazaarShop</h1> --}}

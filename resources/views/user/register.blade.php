@@ -1,5 +1,5 @@
 <x-layout>
-<div class="container_box">
+<div class="container_box py-5">
     <form action="/register" method="post" class="bg-warning shadow rounded p-4 my-5 box_form bg-opacity-50 border border-danger-subtle">
 
         @csrf

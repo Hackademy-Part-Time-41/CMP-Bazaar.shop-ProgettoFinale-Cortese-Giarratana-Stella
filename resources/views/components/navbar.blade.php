@@ -38,6 +38,13 @@
             <a class="nav-link" href="{{route('article.index')}}">{{__('ui.browse')}}</a>
           </li>
 
+          
+          @auth
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link" href="{{route('create.article')}}">Crea articolo</a></li>
+          <li>
+          @endauth
+
           {{-- modifica --}}
           <li class="nav-item dropdown d-flex align-items-center">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,9 +62,6 @@
               @endguest
 
               @auth
-                  <li>
-                    <a class="nav-link btn btn-outline-danger" href="{{route('create.article')}}">Crea articolo</a></li>
-                  <li>
                     @if (Auth::user()->is_revisor)  
                     <hr class="dropdown-divider">
                         <li>

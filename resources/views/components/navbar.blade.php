@@ -46,7 +46,7 @@
             <a class="nav-link" href="{{route('article.index')}}">{{__('ui.browse')}}</a>
           </li>
 
-          
+          {{-- account --}}
           <li class="nav-item dropdown d-flex align-items-center">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Account
@@ -56,7 +56,8 @@
                 <li class="nav-item">
                   <a class="nav-link btn btn-outline-danger" href="/login">Login</a>
                 </li>
-  
+                
+                <hr class="dropdown-divider">
                 <li class="nav-item">
                   <a class="nav-link btn btn-outline-danger" href="/register">{{__('ui.signup')}}</a>
                 </li>
@@ -64,7 +65,6 @@
 
               @auth
                     @if (Auth::user()->is_revisor)  
-                    <hr class="dropdown-divider">
                         <li>
                           <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-danger position-relative w-sm-25">Zona revisore
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
@@ -73,14 +73,14 @@
                     @endif
                   </li>
                   <hr class="dropdown-divider">
+
                   <li>
-                    
                       <form class="d-flex justify-content-center" action="/logout" method="post">
                       @csrf
                       <button class="nav-link btn btn-outline-danger w-100" type="submit">Logout</button>
                       </form>
+                    </li>
                     
-                  </li>
               </li>
               @endauth
 

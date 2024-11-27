@@ -68,3 +68,8 @@
     height: 800px; ;
 
 }
+
+.dropdown-item:hover {
+    background-color: #dc3545;
+    border-radius: 8%;
+}

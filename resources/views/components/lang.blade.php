@@ -6,8 +6,8 @@
                 <x-_locale lang="it" />
             </a>
             <ul class="dropdown-menu navbar-customclass">
-                <li><x-_locale lang="en" /></li>
-                <li><x-_locale lang="es" /></li>
+                <li class="dropdown-item"><x-_locale lang="en" /></li>
+                <li class="dropdown-item"><x-_locale lang="es" /></li>
             </ul>
         </li>
     @elseif (app()->getLocale() == 'en')

@@ -23,7 +23,7 @@
           {{-- crea articolo --}}
           @auth
           <li class="d-flex align-items-center">
-            <a class="nav-link btn btn-outline-danger" href="{{route('create.article')}}">Inserisci articolo</a></li>
+            <a class="nav-link btn btn-outline-danger" href="{{route('create.article')}}">{{__('ui.createArticle')}}</a></li>
           <li>
           @endauth
 
@@ -66,7 +66,7 @@
               @auth
                     @if (Auth::user()->is_revisor)
                         <li>
-                          <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-danger position-relative w-sm-25">Zona revisore
+                          <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-danger position-relative w-sm-25">{{__('ui.reviewArea')}}
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
                           </a>
                         </li>            

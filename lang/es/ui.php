@@ -15,7 +15,7 @@ return
         'libri e riviste'=>'Libros y revistas',
         'accessori'=>'Accessórios',
         'motori'=>'Motores',
-        'createArticle'=>'Crea un artículo',
+        'createArticle'=>'Crea artículo',
         'noArticlesYet'=>'Todavía no hay artículos',
         'categories'=>'Categorías',
         'browse'=>'Descubre',
@@ -26,4 +26,5 @@ return
         'revisorRequest1'=>'¿Quieres ser revisor?',
         'revisorRequest2'=>'Haz clic aqui para solecitar',
         'revisorRequestBtn'=>'¡Sea revisor!',
+        'reviewArea'=>'Zona de Revisión'
     ];

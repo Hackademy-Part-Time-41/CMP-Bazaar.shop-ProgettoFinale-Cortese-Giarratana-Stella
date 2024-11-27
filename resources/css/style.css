@@ -61,4 +61,11 @@
     border-radius: 8%;
 }
 
+.position-absolute {
+    max-height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* overflow-x: hidden; */
+}
+
 

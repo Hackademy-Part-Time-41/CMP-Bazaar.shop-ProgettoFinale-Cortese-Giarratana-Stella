@@ -1,6 +1,7 @@
 <x-layout>
 
-    <div class="container border rounded-4 shadow">
+    <div style="height: 15vh; width: 100%"></div>
+    <div class="container border rounded-4 shadow mb-5">
         <div class="row height-custom justify-content-center align-items-center">
             <div class="col-12 col-md-6 mb-3">
                 @if ($article->images->count() > 0)

@@ -26,8 +26,8 @@
             <div class="sfondo">
                 <img src="/img/wallpaper.png" alt="bazaarshop">
             </div>
-            <div class="border border-2 border-danger rounded-4 my-1 col-10">
-            <p class="display-6">Guarda le ultime offerte</p>
+            <div class="border  shadow rounded-4 my-1 col-10 mt-3">
+            <p class="display-6 mt-4">{{__('ui.offers')}}</p>
             {{-- card --}}
             <div class="row justify-content-center my-5">
             <div class="row height-custom justify-content-center align-items-center py-5 px-5 col-10">

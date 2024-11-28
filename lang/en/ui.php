@@ -72,4 +72,6 @@ return
         'resultSearch'=>'Search results for ',
         'noResultSearch'=>'No article matches your search',
 
+        'offers'=>'Check out the latest offers!',
+
     ];

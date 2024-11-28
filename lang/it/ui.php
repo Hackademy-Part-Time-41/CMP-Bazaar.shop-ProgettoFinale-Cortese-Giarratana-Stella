@@ -74,4 +74,6 @@ return
         'resultSearch'=>'Risultati per la ricerca ',
         'noResultSearch'=>'Nessun articolo corrisponde alla tua ricerca',
         
+
+        'offers'=>'Guarda le ultime offerte!',
     ];

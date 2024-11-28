@@ -8,7 +8,6 @@
 
 .navbar-customclass {
     background-color: orange;
-    flex-wrap: nowrap;
 }
 
 /* .title-custom{
@@ -29,20 +28,15 @@
 }
 
 .sfondo{
-    /* height: 500px; */
-    /* background-image: url('/resources/css/img/wallpaper.png'); */
-     /* background-repeat: no-repeat ; */
+    height: 500px;
+    background-image: url('/resources/css/img/wallpaper.png');
+     background-repeat: no-repeat ;
      display: flex;
      align-items: center;
      justify-content: center;
      position: relative;
-     
-     /* height: min-content; */
-     
-     /* background-size: 50%; */
+     background-size: 100%;
  }
-
-
 
  .btncustom{
     background-color:rgb(107, 104, 182);
@@ -59,7 +53,7 @@
 .container_box{
     display: flex;
     justify-content: center;
-    height: max-content; 
+    height: max-content; ;
 }
 
 .dropdown-item:hover {
@@ -74,4 +68,8 @@
     /* overflow-x: hidden; */
 }
 
-
+.btn-success:hover {
+    color: green;
+    background-color: white;
+    border-color: green;
+}

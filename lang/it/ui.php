@@ -66,7 +66,12 @@ return
         // bycategory
         'articlesCategory'=>'Articoli della categoria:',
         'noItemsInThisCategory'=>'Non ci sono articoli in questa categoria',
-                    
-        
+               
+        // index article
+        'noItems'=>'Non sono ancora stati creati articoli',
 
+        // searched article
+        'resultSearch'=>'Risultati per la ricerca ',
+        'noResultSearch'=>'Nessun articolo corrisponde alla tua ricerca',
+        
     ];

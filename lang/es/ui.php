@@ -50,6 +50,10 @@ return
         'categorySelector'=>'Selecciona la categoría',
         'crea'=>'Crea',
 
+        // draft
+        'item'=>'Artículo:',
+        'itemDetail'=>'Detalle del artículo:',
+
 
 
     ];

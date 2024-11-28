@@ -10,7 +10,7 @@
         
         <div class="row height-custom justify-content-center align-items-center text-center">
             <div class="col-12">
-                <h1 class="display-4">Dettaglio dell'articolo: {{$article->title}}</h1>
+                <h1 class="display-4">{{__('ui.itemDetail')}} {{$article->title}}</h1>
             </div>
         </div>
         
@@ -45,10 +45,10 @@
                 @endif
             </div>
             <div class="col-12 col-md-6 mb-3 height-custom text-center">
-                <h2 class="display-5"><span class="fw-bold">Titolo:</span>{{$article->title}}</h2>
+                <h2 class="display-5"><span class="fw-bold">{{__('ui.item')}}</span>{{$article->title}}</h2>
                 <div class="d-flex flex-column justify-content-center h-75">
-                    <h4 class="fw-bold">Prezzo: {{$article->price}}€</h4>
-                    <h5>Descrizione:</h5>
+                    <h4 class="fw-bold">{{__('ui.price')}} {{$article->price}}€</h4>
+                    <h5>{{__('ui.description')}}</h5>
                     <p>{{$article->description}}</p>
                 </div>
             </div>

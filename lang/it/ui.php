@@ -52,4 +52,8 @@ return
         'categorySelector'=>'Seleziona la categoria',
         'crea'=>'Crea',
 
+        // draft
+        'item'=>'Prodotto:',
+        'itemDetail'=>'Dettaglio dell\'articolo:',
+
     ];

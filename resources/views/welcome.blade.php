@@ -26,14 +26,14 @@
             <div class="sfondo">
                 <img src="/img/wallpaper.png" alt="bazaarshop">
             </div>
-            <div class="border  shadow rounded-4 my-1 col-10 mt-3">
-            <p class="display-6 mt-4">{{__('ui.offers')}}</p>
+            <div class="border shadow rounded-4 my-1 col-10 mt-3 mb-3">
+            <p class="display-1 mt-4">{{__('ui.offers')}}</p>
             {{-- card --}}
             <div class="row justify-content-center my-5">
             <div class="row height-custom justify-content-center align-items-center py-5 px-5 col-10">
                 @forelse ($articles as $article)
                     <div class="col-12 col-md-6 col-lg-4">
-                        <x-card :article="$article"/>
+                        <x-card :article="$article"/> 
                     </div>
                 @empty
                     <div class="col-12">

@@ -2,7 +2,7 @@
 
     <div class="container-fluid">
         <div class="row py-5 justify-content-center align-items-center text-center">
-            <div class="col-12">
+            <div class="col-12 mt-5">
                 <h1 class="display-1">{{__('ui.resultSearch')}}"<span class="fst-italic">{{$query}}</span>" </h1>
             </div>
         </div>

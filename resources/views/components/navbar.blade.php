@@ -66,8 +66,8 @@
               @auth
                     @if (Auth::user()->is_revisor)
                         <li>
-                          <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-danger position-relative w-sm-25">{{__('ui.reviewArea')}}
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
+                          <a href=" {{ route('revisor.index')}}" class="nav-link btn btn-outline-danger">{{__('ui.reviewArea')}}
+                            <span class="badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}</span>
                           </a>
                         </li>            
                     @endif

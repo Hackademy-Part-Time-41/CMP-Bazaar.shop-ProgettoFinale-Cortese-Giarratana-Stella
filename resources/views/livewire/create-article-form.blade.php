@@ -6,7 +6,7 @@
 
 <form class="bg-warning bg-opacity-50 border border-danger-subtle shadow rounded p-5 my-5" wire:submit="store">
     <div class="mb-3">
-        <label for="title" class="form-label">Titolo:</label>
+        <label for="title" class="form-label">{{__('ui.title')}}</label>
         <input type="text" class="form-control" @error('title') is-invalid @enderror id="title"
             wire:model.blur="title">
         @error('title')
@@ -15,7 +15,7 @@
     </div>
 
     <div class="mb-3">
-        <label for="description" class="form-label">Descrizione:</label>
+        <label for="description" class="form-label">{{__('ui.description')}}</label>
         <textarea id="description" cols="30" rows="10" class="form-control" @error('description') is-invalid @enderror
             wire:model.blur="description"></textarea>
         @error('description')
@@ -24,7 +24,7 @@
     </div>
 
     <div class="mb-3">
-        <label for="price" class="form-label">Prezzo:</label>
+        <label for="price" class="form-label">{{__('ui.price')}}</label>
         <input type="text" class="form-control" @error('price') is-invalid @enderror id="price"
             wire:model.blur="price">
         @error('price')
@@ -33,7 +33,7 @@
     </div>
     <div class="mb-3">
         <select id="category" wire:model.blur="category" class="form-control" @error('category') is-invalid @enderror>
-            <option label selected>Seleziona una categoria</option>
+            <option label selected>{{__('ui.categorySelector')}}</option>
             @foreach ($categories as $category)
                 <option value="{{ $category->id }}">{{ $category->name }}</option>
             @endforeach
@@ -72,6 +72,6 @@
     @endif
 
     <div class="d-flex justify-content-center">
-        <button type="submit" class="btn btn-dark">Crea</button>
+        <button type="submit" class="btn btn-dark">{{__('ui.crea')}}</button>
     </div>
 </form>

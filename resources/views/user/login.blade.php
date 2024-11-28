@@ -5,7 +5,7 @@
         @csrf
 
         <div class="py-2">
-        <label for="email">Email</label>
+        <label for="email">{{__('ui.email')}}</label>
         <input id="email" type="email" class="form-control" name="email"  value="{{old('email')}}">
         @error('email')
             <b style="color: red">{{$message}}</b>
@@ -13,7 +13,7 @@
         </div>
 
         <div class="py-2">
-        <label for="password">Password</label>
+        <label for="password">{{__('ui.password')}}</label>
         <input id="password" type="password" class="form-control" name="password" value="{{old('password')}}" >
         @error('password')
             <b style="color: red">{{$message}}</b>

@@ -2,9 +2,20 @@
 
 return 
     [
-        'hello'=>'Hello',
+        // article/index
         'allArticles'=>'All items',
+
+        // navbar
         'search'=>'Search',
+        'categories'=>'Categories',
+        'browse'=>'Browse',
+        'write'=>'Write',
+        'signup'=>'Sign up',
+        'cart'=>'Cart',
+        'detail'=>'Show',
+        'reviewArea' => 'Review Area',
+
+        // categorie
         'elettronica'=>'Electronics',
         'abbigliamento'=>'Clothing',
         'salute e bellezza'=>'Health & Beauty',
@@ -15,16 +26,31 @@ return
         'libri e riviste'=>'Books and mags',
         'accessori'=>'Accessories',
         'motori'=>'Motors',
+
         'createArticle'=>'Create article',
         'noArticlesYet'=>'There are no articles yet',
-        'categories'=>'Categories',
-        'browse'=>'Browse',
-        'write'=>'Write',
-        'signup'=>'Sign up',
-        'cart'=>'Cart',
-        'detail'=>'Show',
+        
+        // footer revisore
         'revisorRequest1'=>'Want to become a revisor?',
         'revisorRequest2'=>'Click here to send a request',
         'revisorRequestBtn'=>'Become a revisor!',
-        'reviewArea' => 'Review Area'
+
+        // form registrazione
+        'usernameChoice'=> 'Your username',
+        'email' => 'Your email',
+        'passwordChoice' => 'Choice your password',
+        'passwordConfirmation'=> 'Confirm password',
+
+        'password'=>'Password',
+
+        // create/article form
+        'title'=>'Title:',
+        'description'=>'Description:',
+        'price'=>'Price',
+        'categorySelector'=>'Select the category',
+        'crea'=>'Create',
+
+
+
+
     ];

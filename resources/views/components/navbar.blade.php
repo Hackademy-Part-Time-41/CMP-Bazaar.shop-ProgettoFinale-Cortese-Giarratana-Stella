@@ -91,9 +91,9 @@
 
         <x-lang></x-lang>
             
-        <li class="d-flex align-items-center">
+        {{-- <li class="d-flex align-items-center">
           <button class="btn btn-outline-danger"><i class="navbar-item bi bi-bag-check-fill"></i>{{__('ui.cart')}} </button>
-        </li>
+        </li> --}}
 
         </ul>
         

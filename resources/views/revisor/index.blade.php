@@ -3,7 +3,7 @@
         <div class="row">
             <div>
                 <div class="rounded shadow bg-body-secondary">
-                    <h1 class="display-5 text-center pb-2 my-4">
+                    <h1 class="display-5 text-center pb-2 my-4 mt-5">
                         Revisor dashboard
                     </h1>
                 </div>
@@ -118,23 +118,25 @@
                         @endif
                     </div>
                 </div>
+
+
                 <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">
                     <div>
-                        <h2> Titolo: {{ $article_to_check->title }}</h2>
-                        <p class="h4"> Descrizione: {{ $article_to_check->description }}</p>                     
-                        <h6> Autore: {{ $article_to_check->user->name }}</h6>
-                        <h6> Prezzo: {{ $article_to_check->price }}€</h6>
+                        <h2> {{__('ui.title')}} {{ $article_to_check->title }}</h2>
+                        <p class="h4"> {{__('ui.description')}} {{ $article_to_check->description }}</p>                     
+                        <h6> {{__('ui.author')}} {{ $article_to_check->user->name }}</h6>
+                        <h6> {{__('ui.price')}}: {{ $article_to_check->price }}€</h6>
                         <h4 class="fst-italic text-muted">#{{ $article_to_check->category->name }}</h4>
                         <div class="d-flex pb-4 justify-content-around">
                             <form action="{{route('reject', ['article'=>$article_to_check])}}" method="POST">
                                 @csrf
                                 @method('PATCH')
-                                <button class="btn btn-danger py-2 px-5 pw-bold"> Rifiuta </button>
+                                <button class="btn btn-danger py-2 px-5 pw-bold"> {{__('ui.reject')}} </button>
                             </form>
                             <form action="{{route('accept', ['article'=>$article_to_check])}}" method="POST">
                                 @csrf
                                 @method('PATCH')
-                                <button class="btn btn-success py-2 px-5 fw-bold"> Accetta </button>
+                                <button class="btn btn-success py-2 px-5 fw-bold"> {{__('ui.accept')}} </button>
                             </form>
                         </div>
                     </div>
@@ -144,9 +146,9 @@
         <div class="row justify-content-center align-items-center height-custom text-center">
             <div class="col-12">
                 <h1 class="fst-italic display-4">
-                    Nessun articolo da revisionare
+                    {{__('ui.noArticleToReview')}}
                 </h1>
-                <a href="{{ route('homepage') }}" class="mt-5 btn btn-success"> Torna alla homepage</a>
+                <a href="{{ route('homepage') }}" class="mt-5 btn btn-success"> {{__('ui.homepageReturn')}}</a>
             </div>
         </div>
         @endif

@@ -54,7 +54,16 @@ return
         'item'=>'Item:',
         'itemDetail'=>'Detail view of the item:',
 
+        // revisor index
+        'author'=>'Author:',
+        'reject'=>'Reject',
+        'accept'=>'Accept',
+        'noArticleToReview'=>'No article to review',
+        'homepageReturn'=>'Back to the homepage',
 
+        // byCategory
+        'articlesCategory'=>'Items in category:',
+        'noItemsInThisCategory'=>'There are no articles for this category',
 
 
 

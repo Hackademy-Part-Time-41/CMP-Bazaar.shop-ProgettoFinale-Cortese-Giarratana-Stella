@@ -24,7 +24,7 @@
     </div>
 
     <div class="mb-3">
-        <label for="price" class="form-label">{{__('ui.price')}}</label>
+        <label for="price" class="form-label">{{__('ui.price')}}:</label>
         <input type="text" class="form-control" @error('price') is-invalid @enderror id="price"
             wire:model.blur="price">
         @error('price')
@@ -35,7 +35,7 @@
         <select id="category" wire:model.blur="category" class="form-control" @error('category') is-invalid @enderror>
             <option label selected>{{__('ui.categorySelector')}}</option>
             @foreach ($categories as $category)
-                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                <option value="{{ $category->id }}">{{__("ui.$category->name")}} </option>
             @endforeach
         </select>
         @error('category')

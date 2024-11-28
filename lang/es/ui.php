@@ -54,6 +54,17 @@ return
         'item'=>'Artículo:',
         'itemDetail'=>'Detalle del artículo:',
 
+        // revisor index
+        'author'=>'Autor:',
+        'reject'=>'Rechaza',
+        'accept'=>'Acepta',
+        'noArticleToReview'=>'No hay artículos para revisar',
+        'homepageReturn'=>'Regrese a la página de inicio',
 
+        // byCategory
+        'articlesCategory'=>'Artículos de la categoría:',
+        'noItemsInThisCategory'=>'No hay artículos para esta categoría',
+
+        
 
     ];

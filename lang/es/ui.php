@@ -13,7 +13,7 @@ return
         'signup'=>'Suscríbete',
         'cart'=>'Carrito',
         'detail'=>'Muestra',
-        'reviewArea'=>'Zona de Revisión',
+        'reviewArea'=>'Zona Revisión',
         
         // categorie
         'elettronica'=>'Electrónica',
